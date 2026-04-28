@@ -1,0 +1,12 @@
+/* App.css is now simplified as we moved global design tokens to index.css */
+/* Add any App-specific layout styles here if needed, but avoid duplicating design tokens */
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
