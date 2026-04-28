@@ -58,25 +58,30 @@ const LeadFormPopup = () => {
             }}
           />
 
-          {/* Modal */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.85, y: 40 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            exit={{ opacity: 0, scale: 0.85, y: 40 }}
-            transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-            style={{
-              position: 'fixed',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              zIndex: 9999,
-              width: '90%',
-              maxWidth: '480px',
-              borderRadius: '24px',
-              overflow: 'hidden',
-              boxShadow: '0 30px 60px rgba(0,0,0,0.3)',
-            }}
-          >
+          {/* Modal Wrapper - flex centering so framer-motion scale doesn't break positioning */}
+          <div style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            pointerEvents: 'none',
+          }}>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.85, y: 40 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.85, y: 40 }}
+              transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+              style={{
+                width: '90%',
+                maxWidth: '480px',
+                borderRadius: '24px',
+                overflow: 'hidden',
+                boxShadow: '0 30px 60px rgba(0,0,0,0.3)',
+                pointerEvents: 'auto',
+              }}
+            >
             {/* Header */}
             <div style={{
               background: 'linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-navy-light) 100%)',
@@ -259,7 +264,8 @@ const LeadFormPopup = () => {
                 )}
               </AnimatePresence>
             </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </>
       )}
     </AnimatePresence>
