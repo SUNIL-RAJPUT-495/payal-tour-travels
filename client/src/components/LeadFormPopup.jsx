@@ -76,8 +76,8 @@ const LeadFormPopup = () => {
               className="lead-popup-modal"
               style={{
                 width: '90%',
-                maxWidth: '420px',
-                borderRadius: '24px',
+                maxWidth: '360px',
+                borderRadius: '20px',
                 overflow: 'hidden',
                 boxShadow: '0 30px 60px rgba(0,0,0,0.3)',
                 pointerEvents: 'auto',
@@ -127,16 +127,16 @@ const LeadFormPopup = () => {
               </div>
               <h3 style={{
                 color: 'white',
-                fontSize: '1.5rem',
+                fontSize: '1.25rem',
                 fontWeight: 700,
                 fontFamily: 'var(--font-heading)',
-                marginBottom: '8px',
+                marginBottom: '4px',
               }}>
                 Plan Your Dream Trip!
               </h3>
               <p style={{
                 color: 'rgba(255,255,255,0.7)',
-                fontSize: '0.95rem',
+                fontSize: '0.85rem',
               }}>
                 Get a free quote and exclusive offers from Payal Tour & Travels
               </p>
@@ -212,19 +212,19 @@ const LeadFormPopup = () => {
                       </select>
                     </div>
 
-                    <motion.button
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      type="submit"
-                      className="btn btn-gold"
-                      style={{
-                        width: '100%',
-                        padding: '16px',
-                        borderRadius: '12px',
-                        fontSize: '1.05rem',
-                        marginTop: '4px',
-                      }}
-                    >
+                      <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        type="submit"
+                        className="btn btn-gold"
+                        style={{
+                          width: '100%',
+                          padding: '12px',
+                          borderRadius: '10px',
+                          fontSize: '0.95rem',
+                          marginTop: '2px',
+                        }}
+                      >
                       Get Free Quote
                     </motion.button>
 
@@ -275,11 +275,11 @@ const LeadFormPopup = () => {
 
 const inputStyle = {
   width: '100%',
-  padding: '14px 14px 14px 44px',
-  borderRadius: '12px',
+  padding: '10px 10px 10px 38px',
+  borderRadius: '10px',
   border: '1px solid rgba(0,0,0,0.08)',
   backgroundColor: 'var(--bg-cream)',
-  fontSize: '0.95rem',
+  fontSize: '0.85rem',
   fontFamily: 'var(--font-body)',
   outline: 'none',
   transition: 'border-color 0.3s ease, box-shadow 0.3s ease',
