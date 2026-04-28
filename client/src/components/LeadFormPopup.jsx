@@ -76,7 +76,7 @@ const LeadFormPopup = () => {
               className="lead-popup-modal"
               style={{
                 width: '90%',
-                maxWidth: '480px',
+                maxWidth: '420px',
                 borderRadius: '24px',
                 overflow: 'hidden',
                 boxShadow: '0 30px 60px rgba(0,0,0,0.3)',
@@ -86,7 +86,7 @@ const LeadFormPopup = () => {
             {/* Header */}
             <div style={{
               background: 'linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-navy-light) 100%)',
-              padding: '32px 32px 28px',
+              padding: '24px 24px 20px',
               position: 'relative',
             }}>
               <motion.button
@@ -113,17 +113,17 @@ const LeadFormPopup = () => {
               </motion.button>
 
               <div style={{
-                width: '56px',
-                height: '56px',
-                borderRadius: '16px',
+                width: '48px',
+                height: '48px',
+                borderRadius: '14px',
                 backgroundColor: 'var(--accent-gold)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                marginBottom: '20px',
+                marginBottom: '16px',
                 boxShadow: 'var(--gold-glow)',
               }}>
-                <MapPin size={28} color="var(--primary-navy)" />
+                <MapPin size={24} color="var(--primary-navy)" />
               </div>
               <h3 style={{
                 color: 'white',
@@ -145,7 +145,7 @@ const LeadFormPopup = () => {
             {/* Body */}
             <div style={{
               backgroundColor: 'var(--bg-white)',
-              padding: '32px',
+              padding: '24px',
             }}>
               <AnimatePresence mode="wait">
                 {!isSubmitted ? (
