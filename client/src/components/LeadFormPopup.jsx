@@ -73,6 +73,7 @@ const LeadFormPopup = () => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.85, y: 40 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+              className="lead-popup-modal"
               style={{
                 width: '90%',
                 maxWidth: '480px',
